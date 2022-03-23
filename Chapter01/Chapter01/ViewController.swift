@@ -15,11 +15,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var firstViewLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
          // Do any additional setup after loading the view.
     }
     
+    @IBAction func sayHello(_ sender: UIButton) {
+        firstViewLabel.text = "Hello, World!"
+    }
 
 
 }
