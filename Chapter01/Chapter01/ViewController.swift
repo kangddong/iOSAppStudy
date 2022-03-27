@@ -24,6 +24,10 @@ class ViewController: UIViewController {
     @IBAction func sayHello(_ sender: UIButton) {
         firstViewLabel.text = "Hello, World!"
     }
-
+    @IBAction func moveNext(_ sender: UIButton) {
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "SecondViewController") else { return }
+        
+        self.present(vc, animated: true)
+    }
 
 }

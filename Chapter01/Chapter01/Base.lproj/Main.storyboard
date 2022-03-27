@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k40-lu-0nl">
-                                <rect key="frame" x="171" y="279" width="73" height="31"/>
+                                <rect key="frame" x="171" y="279" width="108" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="인사하기"/>
@@ -26,11 +26,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4La-h5-d8r">
-                                <rect key="frame" x="163" y="340" width="89" height="31"/>
+                                <rect key="frame" x="163" y="340" width="150" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="페이지 이동"/>
                                 <connections>
+                                    <action selector="moveNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gFT-Vj-zag"/>
                                     <segue destination="TOW-nv-nOP" kind="presentation" id="s6F-KN-Uce"/>
                                 </connections>
                             </button>
@@ -53,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="28.037383177570092" y="65.442764578833703"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="PS0-Os-xLO">
             <objects>
-                <viewController id="TOW-nv-nOP" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondViewController" id="TOW-nv-nOP" customClass="SecondViewController" customModule="Chapter01" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nWN-sp-vyv">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,6 +69,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLx-hu-cwI">
+                                <rect key="frame" x="120" y="286" width="198" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="뒤로가기"/>
+                                <connections>
+                                    <action selector="moveBack:" destination="TOW-nv-nOP" eventType="touchUpInside" id="CJf-KC-tqg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lMk-hz-zK0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

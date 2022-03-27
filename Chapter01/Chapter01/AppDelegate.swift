@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // 앱이 처음 실행 할 때, 필요한 시스템적 처리를 모두 끝내고 메인 화면을 표시하기 직전에 호출
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        sleep(5)
+        sleep(2)
         return true
     }
 
