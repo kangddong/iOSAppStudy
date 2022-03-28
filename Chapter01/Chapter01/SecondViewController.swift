@@ -17,8 +17,8 @@ class SecondViewController: UIViewController {
     
 
     @IBAction func moveBack(_ sender: UIButton) {
-        self.presentingViewController?.dismiss(animated: true)
-//        self.dismiss(animated: true)
+//        self.presentingViewController?.dismiss(animated: true)
+        self.dismiss(animated: true)
     }
 
 }
