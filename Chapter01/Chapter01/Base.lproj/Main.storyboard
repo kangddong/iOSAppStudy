@@ -216,6 +216,7 @@
                                                         <buttonConfiguration key="configuration" style="plain" title="직접입력"/>
                                                     </button>
                                                 </subviews>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wdV-6u-kGV">
                                                 <rect key="frame" x="0.0" y="31" width="290.66666666666669" height="31"/>
@@ -241,11 +242,12 @@
                                                         <buttonConfiguration key="configuration" style="plain" title="4"/>
                                                     </button>
                                                 </subviews>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
                                             </stackView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dGd-nV-kkP">
                                 <rect key="frame" x="0.0" y="229" width="428" height="697"/>
@@ -265,6 +267,13 @@
                         <viewLayoutGuide key="safeArea" id="bmd-S2-3Wj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="S4I-bh-3x8" id="6QW-Kl-AAR"/>
+                        <outlet property="couponTableView" destination="dGd-nV-kkP" id="KcA-qU-JtV"/>
+                        <outlet property="dateView" destination="Tzr-0P-268" id="aZB-3k-AcY"/>
+                        <outlet property="periodView" destination="wdV-6u-kGV" id="A7w-vr-pfo"/>
+                        <outlet property="verticalStackView" destination="TBa-jz-YlR" id="s3B-aC-fQw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rtz-3O-16O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -346,6 +355,9 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -355,8 +367,14 @@
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
