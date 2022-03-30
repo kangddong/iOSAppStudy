@@ -9,8 +9,16 @@ import UIKit
 
 class TestViewController: UIViewController {
 
+    @IBOutlet weak var topview: UIView!
+    @IBOutlet weak var bottmoView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        topview.isHidden = true
+        topview.alpha = 0
+        bottmoView.isHidden = false
+        bottmoView.alpha = 1
 
         // Do any additional setup after loading the view.
     }

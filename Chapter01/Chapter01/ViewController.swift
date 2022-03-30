@@ -15,6 +15,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
     @IBOutlet weak var firstViewLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,5 +30,15 @@ class ViewController: UIViewController {
         
         self.present(vc, animated: true)
     }
-
+    @IBAction func moveTest(_ sender: UIButton) {
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "TestViewController") else { return }
+        
+        self.show(vc, sender: nil)
+    }
+    
+    @IBAction func moveTableViewTest(_ sender: UIButton) {
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "TestTableViewController") else { return }
+        
+        self.show(vc, sender: nil)
+    }
 }
