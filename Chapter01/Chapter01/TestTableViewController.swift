@@ -15,10 +15,19 @@ class TestTableViewController: UIViewController {
     @IBOutlet weak var periodView: UIStackView!
     
     @IBOutlet weak var couponTableView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         initLayout()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        print("viewWillDisappear")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        print("viewDidDisappear")
     }
 
     func initLayout() {

@@ -21,7 +21,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
          // Do any additional setup after loading the view.
     }
-    
+    override func didReceiveMemoryWarning() {
+        print("didReceiveMemoryWarning")
+    }
+
     @IBAction func sayHello(_ sender: UIButton) {
         firstViewLabel.text = "Hello, World!"
     }
