@@ -15,7 +15,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
+    @IBOutlet weak var imgaeButton: UIButton!
     @IBOutlet weak var firstViewLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +38,15 @@ class ViewController: UIViewController {
     
     @IBAction func moveTableViewTest(_ sender: UIButton) {
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "TestTableViewController") else { return }
-        
+        //vc.modalPresentationStyle = .fullScreen
+        //self.present(vc, animated: false)
         self.show(vc, sender: nil)
+    }
+    
+    @IBAction func changeImage(sender: UIButton) {
+        print(imgaeButton.state)
+        imgaeButton.setBackgroundImage(UIImage(systemName: "pencil"), for: .normal)
+        imgaeButton.setImage(UIImage(systemName: "pencil"), for: .normal)
+        //UIControl.State
     }
 }
