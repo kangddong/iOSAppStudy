@@ -17,9 +17,21 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var imgaeButton: UIButton!
     @IBOutlet weak var firstViewLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-         // Do any additional setup after loading the view.
+        print("viewDidLoad")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("viewWillAppear")
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("viewDidAppear")
     }
     override func didReceiveMemoryWarning() {
         print("didReceiveMemoryWarning")
@@ -47,9 +59,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func changeImage(sender: UIButton) {
-        print(imgaeButton.state)
-        imgaeButton.setBackgroundImage(UIImage(systemName: "pencil"), for: .normal)
-        imgaeButton.setImage(UIImage(systemName: "pencil"), for: .normal)
-        //UIControl.State
+        print("send Warning")
+        UIControl().sendAction(Selector(("_performMemoryWarning")), to: UIApplication.shared, for: nil)
     }
 }

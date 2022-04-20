@@ -174,6 +174,32 @@
             </objects>
             <point key="canvasLocation" x="-8" y="2246"/>
         </scene>
+        <!--Third View Controller-->
+        <scene sceneID="pWr-k9-i2e">
+            <objects>
+                <viewController storyboardIdentifier="ThirdViewController" id="9u1-Sy-ldY" customClass="ThirdViewController" customModule="Chapter01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Zm-w7-TVg">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLx-hu-cwI">
+                                <rect key="frame" x="115" y="352" width="198" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="뒤로가기"/>
+                                <connections>
+                                    <action selector="moveback:" destination="9u1-Sy-ldY" eventType="touchUpInside" id="1GU-Tq-t6G"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5lY-J8-Nco"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wS0-tU-H8c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3014" y="790"/>
+        </scene>
         <!--Second View Controller-->
         <scene sceneID="PS0-Os-xLO">
             <objects>
@@ -189,13 +215,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLx-hu-cwI">
-                                <rect key="frame" x="120" y="286" width="198" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMy-qd-ghE">
+                                <rect key="frame" x="120" y="225" width="198" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="move"/>
+                                <connections>
+                                    <action selector="moveThird:" destination="TOW-nv-nOP" eventType="touchUpInside" id="Wrh-OC-zCx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pg-Ol-zNk">
+                                <rect key="frame" x="120" y="292" width="198" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="뒤로가기"/>
                                 <connections>
-                                    <action selector="moveBack:" destination="TOW-nv-nOP" eventType="touchUpInside" id="CJf-KC-tqg"/>
+                                    <action selector="moveBack:" destination="TOW-nv-nOP" eventType="touchUpInside" id="vc4-Xn-x8e"/>
                                 </connections>
                             </button>
                         </subviews>
