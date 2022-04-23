@@ -9,7 +9,7 @@ import UIKit
 import UserNotifications
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
 
     //앱이 처음 실행될 때
@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let notiCenter = UNUserNotificationCenter.current()
         notiCenter.requestAuthorization(options: [.alert, .badge, .sound]) { (didAllow, e) in}
+        notiCenter.delegate = self
         
         return true
     }
@@ -36,28 +37,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
     
-    func applicationWillResignActive(_ application: UIApplication) {
-        UNUserNotificationCenter.current().getNotificationSettings { settings in
-            if settings.authorizationStatus == UNAuthorizationStatus.authorized {
-                
-                let notiContent = UNMutableNotificationContent()
-                notiContent.badge = 1
-                notiContent.title = "로컬 알림 메시지"
-                notiContent.subtitle = "앱 다시 열어 !"
-                notiContent.body = "왜 나가 ! 다시 들어와 !"
-                notiContent.sound = UNNotificationSound.default
-                notiContent.userInfo = ["name":"강동영"]
-                
-                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
-                let request = UNNotificationRequest(identifier: "wakeup", content: notiContent, trigger: trigger)
-                
-                UNUserNotificationCenter.current().add(request)
-            } else {
-                print("사용자가 동의하지 않음")
-            }
+    //알림 메세지를 클릭했을 경우에 실행되는 코드
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
+        if notification.request.identifier == "wakeup" {
+            let userInfo = notification.request.content.userInfo
+            print(userInfo["name"]!)
         }
+        
+        completionHandler([.alert, .badge, .sound])
     }
-
-
 }
 
