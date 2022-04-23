@@ -36,5 +36,14 @@ class ViewController: UIViewController {
         intervalText.text = "\(value)분 마다"
     }
     
+    @IBAction func onSubmit(_ sender: UIButton) {
+        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "RVC") as? ResultViewController else { return }
+        vc.paramEmail = email.text!
+        vc.paramUpdate = isUpdate.isOn
+        vc.paramInterval = interval.stepValue
+        
+        self.present(vc, animated: true, completion: nil)
+    }
+    
 }
 
