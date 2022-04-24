@@ -14,6 +14,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.view.backgroundColor = .black
         initTFLayout()
     }
     
@@ -26,6 +27,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
         tf.enablesReturnKeyAutomatically = true
     }
 
-
+    @IBAction func btn(_ sender: UIButton) {
+        if tf.isFocused {
+            print("isFocus true")
+        } else {
+            print("isFocus true")
+        }
+        if tf.isFirstResponder {
+            print("isFirstResponder true")
+        } else {
+            print("isFirstResponder false")
+        }
+        tf.resignFirstResponder()
+        
+    }
+    
 }
 
