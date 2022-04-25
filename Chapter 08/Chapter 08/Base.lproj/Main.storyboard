@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--List View Controller-->
         <scene sceneID="lBM-5e-QNk">
             <objects>
-                <tableViewController id="Xeq-O3-8fj" sceneMemberID="viewController">
+                <tableViewController id="Xeq-O3-8fj" customClass="ListViewController" customModule="Chapter_08" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="t9W-4O-bbT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,7 +34,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OAe-Fd-tSr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-967" y="46"/>
+            <point key="canvasLocation" x="-826" y="46"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
