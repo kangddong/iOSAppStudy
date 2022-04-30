@@ -12,8 +12,8 @@ class ListViewController: UITableViewController {
   var list = [String]()
   
   override func viewWillAppear(_ animated: Bool) {
-    self.tableView.estimatedRowHeight = 50 // 대충의 높이값
-      self.tableView.rowHeight = UITableView.automaticDimension
+    //self.tableView.estimatedRowHeight = 50 // 대충의 높이값
+    //self.tableView.rowHeight = UITableView.automaticDimension
       
   }
   
@@ -58,14 +58,24 @@ class ListViewController: UITableViewController {
   }
 
   
-  override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    let row = self.list[indexPath.row]
-    print(row.count)
+//  override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//    let row = self.list[indexPath.row]
+//    print(row.count)
+//
+//    // 높이를 조절해준다. 기본 높이 60 + 글의 길이가 30자를 넘어갈 때마다 20만큼씩 높이를 늘려준다.
+//    let height = CGFloat(60 + (row.count / 30) * 20)
+//    print(height)
+//    return height
+//  }
     
-    // 높이를 조절해준다. 기본 높이 60 + 글의 길이가 30자를 넘어갈 때마다 20만큼씩 높이를 늘려준다.
-    let height = CGFloat(60 + (row.count / 30) * 20)
-    print(height)
-    return height
-  }
+    override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+//        let row = self.list[indexPath.row]
+//
+//        print(row.count)
+//        // 높이를 조절해준다. 기본 높이 60 + 글의 길이가 30자를 넘어갈 때마다 20만큼씩 높이를 늘려준다.
+//        let height = CGFloat(60 + (row.count / 30) * 20)
+//        print(height)
+        return 60
+    }
  
 }
