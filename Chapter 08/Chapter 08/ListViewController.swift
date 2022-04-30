@@ -39,12 +39,7 @@ class ListViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return list.count
     }
@@ -53,11 +48,14 @@ class ListViewController: UITableViewController {
         let row = list[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListCell")!
         cell.textLabel?.text = row.title
+        cell.detailTextLabel?.text = row.description
+        
 
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        NSLog("선택된 행은 \(indexPath.row)번째 행입니다")
         print("didSelectRowAt")
     }
 
