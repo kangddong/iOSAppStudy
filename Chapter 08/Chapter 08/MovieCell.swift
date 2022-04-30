@@ -13,6 +13,8 @@ class MovieCell: UITableViewCell {
     @IBOutlet weak var opendate: UILabel!
     @IBOutlet weak var rating: UILabel!
     @IBOutlet weak var desc: UILabel!
+    @IBOutlet weak var thumbnail: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
