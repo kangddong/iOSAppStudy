@@ -20,6 +20,24 @@ class MovieCell: UITableViewCell {
         // Initialization code
         NSLog("awakeFromNib Called")
     }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        NSLog("prepareForReuse Called")
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        NSLog("layoutSubviews Called")
+    }
+    
+    override func layoutIfNeeded() {
+        super.layoutIfNeeded()
+        
+        NSLog("layoutIfNeeded Called")
+    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
