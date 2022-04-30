@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EF46E0F02816E917005E8E67 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF46E0EF2816E917005E8E67 /* ListViewController.swift */; };
 		EF46E0F22816EE4E005E8E67 /* MoviewVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF46E0F12816EE4E005E8E67 /* MoviewVO.swift */; };
+		EF46E0F4281CE7F7005E8E67 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF46E0F3281CE7F7005E8E67 /* MovieCell.swift */; };
 		EFBDEF24281593A000560F26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBDEF23281593A000560F26 /* AppDelegate.swift */; };
 		EFBDEF26281593A000560F26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBDEF25281593A000560F26 /* SceneDelegate.swift */; };
 		EFBDEF28281593A000560F26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBDEF27281593A000560F26 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		EF46E0EF2816E917005E8E67 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		EF46E0F12816EE4E005E8E67 /* MoviewVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviewVO.swift; sourceTree = "<group>"; };
+		EF46E0F3281CE7F7005E8E67 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		EFBDEF20281593A000560F26 /* Chapter 08.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 08.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFBDEF23281593A000560F26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFBDEF25281593A000560F26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				EFBDEF372815AC4800560F26 /* SecondViewController.swift */,
 				EF46E0EF2816E917005E8E67 /* ListViewController.swift */,
 				EF46E0F12816EE4E005E8E67 /* MoviewVO.swift */,
+				EF46E0F3281CE7F7005E8E67 /* MovieCell.swift */,
 			);
 			path = "Chapter 08";
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF46E0F4281CE7F7005E8E67 /* MovieCell.swift in Sources */,
 				EFBDEF382815AC4800560F26 /* SecondViewController.swift in Sources */,
 				EFBDEF28281593A000560F26 /* ViewController.swift in Sources */,
 				EFBDEF24281593A000560F26 /* AppDelegate.swift in Sources */,
