@@ -11,7 +11,7 @@ class ListViewController: UITableViewController {
 
     
     var dataset = [
-        ("다크 나이트", "영웅물에 철학에 음악까지 더해져 예술이 되다.\n다크나이트는 배트맨보다도 조커의 연기가 매우 일품이었다.", "2008-09-04", 8.95, "darknight.jpg"),
+        ("다크 나이트", "영웅물에 철학에 음악까지 더해져 예술이 되다.\n다크나이트는 배트맨보다도 조커의 연기가 매우 일품이었다.\n다크나이트는 배트맨보다도 조커의 연기가 매우 일품이었다.\n다크나이트는 배트맨보다도 조커의 연기가 매우 일품이었다.", "2008-09-04", 8.95, "darknight.jpg"),
         ("호우시절", "때를 알고 내리는 좋은 비", "2009-10-08", 7.31, "rain.jpg"),
         ("말할 수 없는 비밀", "여기서 너까지 다섯 걸음", "2015-05-07", 9.19, "secret.jpg")
     ]
@@ -36,7 +36,7 @@ class ListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //self.tableView.estimatedRowHeight = 90
+        self.tableView.estimatedRowHeight = 90
         self.tableView.rowHeight = UITableView.automaticDimension
         //self.tableView.rowHeight = 90
 
