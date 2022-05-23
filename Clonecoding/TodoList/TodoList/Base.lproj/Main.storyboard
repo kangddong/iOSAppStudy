@@ -87,6 +87,12 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="414" height="78"/>
+                                        <connections>
+                                            <outlet property="checkButton" destination="tYy-8v-c7n" id="inE-pA-zPf"/>
+                                            <outlet property="deleteButton" destination="7Jd-h2-b2p" id="hbj-y4-79w"/>
+                                            <outlet property="descriptionLabel" destination="5lg-eh-PbK" id="SQU-Uh-qOr"/>
+                                            <outlet property="strikeThroughView" destination="1ZY-78-wDS" id="wpM-TY-nJS"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TodoListHeaderView" id="R1q-Uz-SRm" customClass="TodoListHeaderView" customModule="TodoList" customModuleProvider="target">
@@ -104,6 +110,9 @@
                                         <constraint firstItem="72u-v5-cQI" firstAttribute="centerY" secondItem="R1q-Uz-SRm" secondAttribute="centerY" id="SSP-AF-2P6"/>
                                         <constraint firstItem="72u-v5-cQI" firstAttribute="leading" secondItem="R1q-Uz-SRm" secondAttribute="leadingMargin" constant="20" id="xZ2-P3-FB5"/>
                                     </constraints>
+                                    <connections>
+                                        <outlet property="sectionTitleLabel" destination="72u-v5-cQI" id="Ulg-Wo-8zD"/>
+                                    </connections>
                                 </collectionReusableView>
                             </collectionView>
                         </subviews>
@@ -116,6 +125,9 @@
                             <constraint firstItem="d9g-gB-XEs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mml-rC-hlN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="d9g-gB-XEs" id="3G0-qr-zJe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
